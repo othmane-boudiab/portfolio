@@ -1,0 +1,43 @@
+home page:
+
+navbar : fixed 
+6 section : header 
+            about me
+            my project
+            my skylls
+            my experience   
+
+les titre: 
+
+h1 : un seule titre ( pour montrer l'objectif de la page ; introduction)
+h2 : 5 titre  ( un titre pour chaque section )
+h3 : 10 titres ( les titre de contenue de chaque section )
+
+
+paragraphe : 10 
+
+
+
+button : 4
+
+image : 6
+
+logo : 1
+
+ordred liste : 1 dans la section about me pour lister les soft skills
+
+
+
+contact page :
+
+nav bar : fixed 
+
+titre de section : h2
+
+4 label 
+
+4  input 
+
+
+
+
