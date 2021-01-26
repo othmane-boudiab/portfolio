@@ -1,3 +1,5 @@
+                     rapport decoupage de la page html
+
 home page:
 
 navbar : fixed 
@@ -37,6 +39,35 @@ titre de section : h2
 4 label 
 
 4  input 
+
+
+                                       rapport analyse html et amélioration de wireframe
+
+-ordre des section est identique au wireframe réalisé
+
+-les elements html contion des classes et id 
+
+-les classe pour les element identique de chaque chaque section , les id pour chaque section ( chaque section et differentes de l'autre)
+
+-le code html contient des element non mentionné dans le wireframe : 
+
+    -my project (9 elements): 3 div dans chaque ligne
+      
+    -my experience : 2 div la premiere contient les icones et la 2eme les informations relatif a chaque icon 
+
+
+-la page contact : se comose d'un formuler ( label + input ) .
+
+
+-les modifications du wireframe concerne my project et experience :
+
+-9 cartes 3 dans chaque ligne dans la section my project 
+
+-dans la section experience une amelioration par un time line qui contient des icones proposé dans l'html
+
+
+
+
 
 
 
