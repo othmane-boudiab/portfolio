@@ -1,4 +1,5 @@
-```css
+
+
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
@@ -120,82 +121,83 @@ h1 {
 
 
 .presentation {
-    width: 100%;
+    width: calc(100% - 300px);
+    margin-left: auto;
     position: relative;
     overflow: hidden;
-    border-top: double;
-    border-bottom:double ;
-    color:whitesmoke;
+    border-top: ;
+    border-bottom: ;
+    color: rgb(255, 255, 255));
+    background: #EDEDED;
+    /* height: 690px; */
 }
-.fond-forme {
-    background: #222f3e;
-    background-image:linear-gradient(#2c2c54,#40407a) ;
-    width: 1500px ;
-    height: 1100px;
+/* .fond-forme {
+    background: rgb(218, 218, 218);
+    background-image: ; 
+    width: 800px;
+    height: 700px;
     position: absolute;
-    transform: rotate(-65deg) translateX(290px) translateY(-170px);
+    transform: rotate(10deg) translateX(0px) translateY(-15px);
     z-index: -1;
-}
+} */
 
 .titre-pres {
-    font-size:xx-large ;
-    text-align:center ;
-    margin: 50px 50px 50px 50px ;
-    padding-left: 100px ;
+    font-size: 35px;
+    text-align: center;
+    margin: 15px;
+    /* padding-left: 0px; */
+
 }
 
 .container-presentation {
     display: flex;
-    width:auto ;
-    justify-content: left ;
-    align-items: flex-start ;
-    margin: 50px 0 ;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px;
     flex-shrink: 0;
-    padding-left: 100px 0  ;
+    padding-left: 50px;
 }
 .pres-gauche {
     width: 600px;
-    flex-shrink: 0;
-    margin-bottom: 50px;
-    padding-left: 300px;
+    flex-shrink: 0;      /* because fix size content */
+    margin-bottom: 40px;
+    padding-left: 140px;
     padding-top: 20px;
 }
 .pres-gauche h3 {
-    text-align:center ;
-    font-size: initial;
-    letter-spacing: initial;
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
-.pres-gauche hr {
-    width: auto;
-    margin: auto ;
+.tst .line {
+    height: 5px;
+    width: 60px;
+    margin: 0 auto 70px auto;
+    background-color: #a1a1a1;
 }
 .pres-gauche p {
-    text-align: justify;
+    text-align: left;
 }
 
 .pres-droite {
     width: 600px;
     flex-shrink: 0;
-    display: initial;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
 }
 .liste-presentation {
-    list-style-type: none ;
-    padding: 10px 0 0 100px ;
+    list-style-type: none;
+    padding: 10px;
 }
 .chiffre-style {
     font-family: 'Abril Fatface', sans-serif;
-    font-size: initial ;
+    font-size: 15px;
 }
 .txt-liste {
-    font-size: initial ;
-    display: inline-table ;
+    font-size: 18px;
+    display: flex;
 }
-
-
-
-
-
 
 
 /* Experiences */
