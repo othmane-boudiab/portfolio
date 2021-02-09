@@ -1,0 +1,259 @@
+.section-range {
+    width: calc(100% - 300px);
+    margin-left: auto;
+    background-color:#3B3B3D;
+}
+
+/* --------------------------------------------------------------------------- */
+.bahom{
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: honeydew;
+
+}
+.grille-skill1 {
+    position: relative;
+    grid-area: 2 / 2 / 5 / 3;
+}
+.grille-skill2 {
+    position: relative;
+    grid-area: 2 / 4 / 5 / 5; 
+}
+
+/* --------------------------------------------------------------------------- */
+.range-cont{
+    margin :2px;
+    padding: 11px;
+}
+
+
+.barre-skillb1{
+    border-radius: 20px;
+    height: 14px;
+    width: 364px;
+    margin-top: 3px;
+    background-color:#9BEEF4;
+    position:absolute;
+    margin-left: 3px;
+}
+.barre-skillb2{
+    border-radius: 20px;
+    height: 14px;
+    width: 303px;
+    margin-top: 3px;
+    background-color:#9BEEF4;
+    position:absolute;
+    margin-left: 3px;
+}
+
+.barre-skillb3{
+    border-radius: 20px;
+    height: 14px;
+    width: 283px;
+    margin-top: 3px;
+    background-color:#9BEEF4;
+    position:absolute;
+    margin-left: 3px;
+}
+
+.barre-skillb4{
+    border-radius: 20px;
+    height: 14px;
+    width: 324px;
+    margin-top: 3px;
+    background-color:#9BEEF4;
+    position:absolute;
+    margin-left: 3px;
+}
+
+.barre-skillb5{
+    border-radius: 20px;
+    height: 14px;
+    width: 283px;
+    margin-top: 3px;
+    background-color:#9BEEF4;
+    position:absolute;
+    margin-left: 3px;
+}
+
+.barre-skillb6{
+    border-radius: 20px;
+    height: 14px;
+    width: 324px;
+    margin-top: 3px;
+    background-color:#9BEEF4;
+    position:absolute;
+    margin-left: 3px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.barre-grises {
+    height: 20px;
+    width: 405px;
+    background-color:#6D6E72;
+    border-radius: 20px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.number-skill{
+    display: flex;
+    justify-content: center;
+}
+
+.label-skill{
+    margin-left: 9px;
+    margin-left: 9px;
+    display: flex;
+    position: absolute;
+}
+/* --------------------------------------------------------------------------- */
+
+.titre-exp {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #EAEBF0;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    padding-top: 2.5%;
+    position: relative;
+}
+.titre-exp::before{
+    content: 'MY SKILLS';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0.1;
+    color: #E4E4E4;
+    position: absolute;
+    width: auto;
+    font-size: 75px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* --------------------------------------------------------------------------- */
+hr{
+    width: 83px;
+    height: 4px;
+    background-color:#6BDDE8;
+    margin-top: -25px;
+    position: relative;
+    border: none;
+}
+body{
+    margin: 0%;
+}
+/* --------------------------------------------------------------------------- */
+.my{
+    color:#6BDDE8 ;
+}
+/* --------------------------------------------------------------------------- */
+
+@media (max-width:400px)
+{
+.section-range {
+    width: auto;
+    margin-left: auto;
+    background-color:#3B3B3D;
+    position: absolute;
+}
+.titre-exp::before{
+   display: none;
+}
+
+/* --------------------------------------------------------------------------- */
+.bahom{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: honeydew;
+
+}
+.grille-skill1 {
+    position: relative;
+    grid-area: 2 / 2 / 5 / 3;;
+}
+.grille-skill2 {
+    position: relative;
+    grid-area: 6 / 2 / 9 / 3; 
+}
+
+
+
+.titre-exp {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #EAEBF0;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    padding-top: 2.5%;
+    
+}
+
+.my{
+    color:#6BDDE8 ;
+}
+}
+
+@media (max-width:1154px)
+{
+.section-range {
+    width: auto;
+    margin-left: auto;
+    background-color:#3B3B3D;
+    position: absolute;
+}
+.titre-exp::before{
+display: none;
+}
+/* --------------------------------------------------------------------------- */
+.bahom{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: honeydew;
+
+}
+.grille-skill1 {
+    position: relative;
+    grid-area: 2 / 2 / 5 / 3;;
+}
+.grille-skill2 {
+    position: relative;
+    grid-area: 6 / 2 / 9 / 3; 
+}
+
+
+
+.titre-exp {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #EAEBF0;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    padding-top: 2.5%;
+    
+}
+
+.my{
+    color:#6BDDE8 ;
+}
+}
+

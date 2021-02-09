@@ -1,0 +1,1118 @@
+/* 1- General Styles
+2- Vertical Navigation Bar
+3- Sections Styles
+    3.1 Accueil Section
+    3.2 About Section
+    3.3 My Skills Section
+    3.4 My Projects Section
+    3.5 My Experience Section
+    3.6 Contact Section */
+
+
+
+/* General Styles */
+
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background: #f1f1f1;
+    color:#EAEBF0 ;
+} */
+
+*, ::before, ::after {
+    box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    :root {
+        --color-main: #6BDDE8;
+        --color-darck:#3B3B3D;
+        --color-white: #fff;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+        color: #f1f1f1;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* start Vertical Navigation Bar */
+
+    .nav-gauche {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 100vh;
+        /* min-height: 800px; */
+        background: var(--color-darck);
+        position: fixed;
+        top: 0;
+        /* border-right: 1px dashed #f1f1f1; */
+        z-index: 5;
+        transition: all 0.2s ease-in-out;
+        border-right: 2px solid var(--color-main);
+    }
+
+    .portrait {
+        flex: 1;
+        padding-top: 30px;
+    }
+
+    .portrait img {
+        width: 120px;
+        border-radius: 50%;
+    }
+
+    .menu {
+        flex: 3;
+        color: var(--color-white);
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 50px 0;
+    }
+
+    .menu li a {
+        color: var(--color-white);
+        /* font-size: 25px; */
+        font-size: 20px;
+    }
+
+    .menu li a:hover {
+        color: var(--color-main);
+    }
+
+    .menu li a i {
+        padding-right: 20Px;
+    }
+
+    .logo {
+        flex: .5;
+        padding-bottom: 20px;
+    }
+
+    .logo img{
+        width: 85px;
+    }
+
+    /* end Vertical Navigation Bar */
+
+    /* Start hero header */
+
+    .hero-header {
+        width: calc(100% - 300px);
+        margin-left: auto;
+        background: url(/ressources/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        /* position: relative; */
+
+    }
+
+    .c-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .overlay {
+        /* position: absolute; */
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .c-header img {
+        width: 200px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    .social-media {
+        list-style: none;
+        /* width: 20%; */
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .social-media a {
+        color: var(--color-white);
+        margin: 10px;
+    }
+
+    .social-media a:hover {
+        color: var(--color-main);
+    }
+
+    .social-media a i {
+        border: 1.5px solid var(--color-white);
+        padding: 5px;
+        border-radius: 50%;
+        margin-bottom: 22px;
+    }
+
+    .social-media a i:hover {
+        border: 1.5px solid var(--color-main);
+    }
+
+
+
+    .btn {
+
+    }
+
+    .btn a {
+        color: var(--color-white);
+        background: var(--color-main);
+        padding: 10px;
+        border-radius: 2px;
+    }
+
+    .btn a:hover {
+        color: var(--color-main);
+        background: none;
+        border: 2px solid var(--color-main);
+    }
+
+    .btn-l {
+        margin-right: 5px;
+    }
+
+    .btn-r {
+        margin-left: 5px;
+    }
+
+    /* --------hamza-------- */
+
+    /* ********************** start about me */
+    .presentation {
+        width: calc(100% - 300px);
+
+        overflow: hidden;
+
+        color: black ;
+
+        float: right;
+        background-color: var(--color-darck);
+    }
+    .titre-pres{
+        font-size: 36px;
+        text-align: center;
+        margin-top: 60px;
+        color: var(--color-white);
+
+
+    }
+    .titre-pres::after{
+        content: "";
+        display: block;
+        height: 10px;
+        color:var(--color-main) ;
+        background:var(--color-main);
+        width: 90px;
+        margin: 0 auto;
+
+    }
+
+    .titre-pres-span{
+        color: var(--color-main);
+
+    }
+    .container-presentation{
+        margin-top: 30px;
+        display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 50px;
+    /* grid-row-gap: 50px; */
+    }
+
+    .fond-form {
+        grid-area: 1 / 1 / 3 / 2;
+
+
+
+
+    }
+    #pres > div > div.fond-forme > img
+    {
+        display: block;
+        margin-left: 15px;
+        margin-right: auto;
+        margin-top: 40px;
+        border-radius: 2px;
+    }
+    /* .fond-form img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+    .pres-gauche {
+        grid-area: 1 / 2 / 2 / 3;
+        align-items: center;
+        padding-top: 40px;
+     }
+     .pres-gauche p{
+         color:#E4E4E4 ;
+         font-size: 20px;
+     }
+    .pres-droite {
+        grid-area: 2 / 2 / 3 / 3;
+            display: flex;
+            justify-content: space-between;
+
+            color: #E4E4E4;
+     }
+     .chiffre-style{
+
+         border: 2px solid   var(--color-main);
+         border-radius: 50%;
+         padding: 10px;
+     }
+     .txt-liste{
+         display: inline;
+
+     }
+     .item-liste {
+
+         margin-top: 30px;
+         font-weight: bold;
+     }
+     .liste-presentation{
+         list-style-type:none;
+
+     }
+     /* *************************** fin de about me */
+
+     /* **************************** start contact */
+    .section-contact{
+        width: calc(100% - 300px);
+
+        overflow: hidden;
+
+        color: var(--color-darck) ;
+
+        float: right;
+        background-color: #3d3d3f;
+    }
+
+
+
+    .container-form{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 60px;
+    }
+    .test{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .form-groupe input{
+        display: block;
+
+
+    }
+
+    .form-groupe textarea{
+        display: block;
+    }
+    #mail{
+        /* padding-right: 100px; */
+    }
+    #prenom{
+        height: 35px;
+        width: 200px;
+        border-radius: 5px;
+        background-color: #888888 ;
+    }
+    #nom{
+        height: 35px;
+        width: 200px;
+        border-radius: 5px;
+        background-color: #888888;
+        margin-left:10px;
+    }
+    #mail{
+        height: 35px;
+        width: 410px;
+        border-radius: 5px;
+        background-color: #888888;
+        margin-top: 20px;
+    }
+    textarea{
+        height: 35px;
+        width: 410px;
+        border-radius: 5px;
+        background-color: #888888;
+        margin-top: 20px;
+    }
+    .button-sub{
+        margin:0 auto;
+        height: 30px;
+        width: 120px;
+        border-radius: 5px;
+        background-color: var(--color-main);
+        margin-top: 20px;
+        border-color: var(--color-main) ;
+        color:var(--color-white);
+        /* padding: 10px; */
+
+    }
+    .liste-adress{
+        margin-top: 16px;
+
+    }
+    .liste-adress p{
+        display: block;
+        font-size: 28px;
+        color:#E4E4E4;
+    }
+    .contact-adress-list{
+        list-style: none;
+    }
+    .cont{
+        font-size: 28px;
+        color:#E4E4E4;
+    }
+
+    /* ********************* end of contact */
+
+    /* ---walid--- */
+
+    .section-range {
+        width: calc(100% - 300px);
+        margin-left: auto;
+        background-color:#3B3B3D;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-end;
+    }
+
+    /* --------------------------------------------------------------------------- */
+    .bahom{
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color: honeydew;
+
+    }
+    .grille-skill1 {
+        position: relative;
+        grid-area: 2 / 2 / 5 / 3;
+    }
+    .grille-skill2 {
+        position: relative;
+        grid-area: 2 / 4 / 5 / 5;
+    }
+
+    /* --------------------------------------------------------------------------- */
+    .range-cont{
+        margin :2px;
+        padding: 11px;
+    }
+
+
+    .barre-skillb1{
+        border-radius: 20px;
+        height: 14px;
+        width: 364px;
+        margin-top: 3px;
+        background-color:#9BEEF4;
+        position:absolute;
+        margin-left: 3px;
+    }
+    .barre-skillb2{
+        border-radius: 20px;
+        height: 14px;
+        width: 303px;
+        margin-top: 3px;
+        background-color:#9BEEF4;
+        position:absolute;
+        margin-left: 3px;
+    }
+
+    .barre-skillb3{
+        border-radius: 20px;
+        height: 14px;
+        width: 283px;
+        margin-top: 3px;
+        background-color:#9BEEF4;
+        position:absolute;
+        margin-left: 3px;
+    }
+
+    .barre-skillb4{
+        border-radius: 20px;
+        height: 14px;
+        width: 324px;
+        margin-top: 3px;
+        background-color:#9BEEF4;
+        position:absolute;
+        margin-left: 3px;
+    }
+
+    .barre-skillb5{
+        border-radius: 20px;
+        height: 14px;
+        width: 283px;
+        margin-top: 3px;
+        background-color:#9BEEF4;
+        position:absolute;
+        margin-left: 3px;
+    }
+
+    .barre-skillb6{
+        border-radius: 20px;
+        height: 14px;
+        width: 324px;
+        margin-top: 3px;
+        background-color:#9BEEF4;
+        position:absolute;
+        margin-left: 3px;
+    }
+
+    /* --------------------------------------------------------------------------- */
+
+    .barre-grises {
+        height: 20px;
+        width: 405px;
+        background-color:#6D6E72;
+        border-radius: 20px;
+    }
+
+    /* --------------------------------------------------------------------------- */
+
+    .number-skill{
+        display: flex;
+        justify-content: center;
+    }
+
+    .label-skill{
+        margin-left: 9px;
+        margin-left: 9px;
+        display: flex;
+        position: absolute;
+    }
+    /* --------------------------------------------------------------------------- */
+
+    .titre-exp {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #EAEBF0;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0%;
+        padding-top: 2.5%;
+
+    }
+    .titre-exp::before{
+        content: 'MY SKILLS';
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        opacity: 0.1;
+        color: #E4E4E4;
+        position: absolute;
+        width: auto;
+        font-size: 75px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* --------------------------------------------------------------------------- */
+    hr{
+        width: 83px;
+        height: 4px;
+        background-color:#6BDDE8;
+        margin-top: 9px;
+        position: relative;
+        border: none;
+    }
+    body{
+        margin: 0%;
+    }
+    /* --------------------------------------------------------------------------- */
+    .my{
+        color:#6BDDE8 ;
+    }
+    /* --------------------------------------------------------------------------- */
+
+    @media (max-width:400px)
+    {
+    .section-range {
+        width: auto;
+        margin-left: auto;
+        background-color:#3B3B3D;
+        position: absolute;
+    }
+    .titre-exp::before{
+       display: none;
+    }
+
+    /* --------------------------------------------------------------------------- */
+    .bahom{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color: honeydew;
+
+    }
+    .grille-skill1 {
+        position: relative;
+        grid-area: 2 / 2 / 5 / 3;;
+    }
+    .grille-skill2 {
+        position: relative;
+        grid-area: 6 / 2 / 9 / 3;
+    }
+
+
+
+    .titre-exp {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #EAEBF0;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0%;
+        padding-top: 2.5%;
+
+    }
+
+    .my{
+        color:#6BDDE8 ;
+    }
+    }
+
+    @media (max-width:1154px)
+    {
+    .section-range {
+        width: auto;
+        margin-left: auto;
+        background-color:#3B3B3D;
+        position: absolute;
+    }
+    .titre-exp::before{
+    display: none;
+    }
+    /* --------------------------------------------------------------------------- */
+    .bahom{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color: honeydew;
+
+    }
+    .grille-skill1 {
+        position: relative;
+        grid-area: 2 / 2 / 5 / 3;;
+    }
+    .grille-skill2 {
+        position: relative;
+        grid-area: 6 / 2 / 9 / 3;
+    }
+
+
+
+    .titre-exp {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #EAEBF0;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0%;
+        padding-top: 2.5%;
+
+    }
+
+    .my{
+        color:#6BDDE8 ;
+    }
+    }
+    © 2021 GitHub, Inc.
+
+
+
+    /* Experiences */
+
+    .travail-exp {
+        background-color: :#3B3B3D;
+        position: relative;
+
+    }
+
+    .travail-exp {
+        width: calc(100% - 300px);
+        margin-left: auto;
+        background: var(--color-darck);
+        position: relative;
+    }
+
+    .titre-travail-exp{
+        width: auto;
+        justify-content: center;
+        display: flex;
+    }
+
+
+    .cont-exp-travail{
+        width: auto;
+
+    }
+
+
+    .barre-verticale {
+        background: #67D3DE;
+        width: 10px;
+        position: absolute;
+        height: 462px;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .boule-ico {
+        width: 45px;
+        margin-bottom: 69px;
+        margin-left: -19px;
+        margin-top: -2px;
+        border: 1px solid #67D3DE;
+        border-radius: 53%;
+        background: #3B3B3D;
+
+
+    }
+    .boule-ico img {
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin: 2px;
+    }
+
+
+    .titre-travail-exp{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #EAEBF0;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6%;
+        margin-top: 0%;
+        padding-top: 2.5%;
+        position: relative;
+    }
+    .titre-travail-exp::before{
+        content: 'EXPERIENCES';
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        opacity: 0.1;
+        color: #E4E4E4;
+        position: absolute;
+        width: auto;
+        font-size: 75px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ln {
+        width: 83px;
+        height: 4px;
+        background-color: #6BDDE8;
+        margin-top: -25px;
+        border: none;
+        margin-top: -64px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+
+    }
+
+
+    .flex-cont-bloc-exp{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 64px;
+        grid-row-gap: 19px;
+        position: relative;
+        padding-top: 7px;
+        margin-top: 47px;
+
+    }
+    .bloc1{
+        position: relative;
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .bloc2{
+        position: relative;
+        grid-area: 2 / 1 / 3 / 2; }
+    .bloc3{
+        position: relative;
+        grid-area: 3 / 2 / 4 / 3;  }
+    .bloc4{
+        position: relative;
+        grid-area: 4 / 1 / 5 / 2; }
+
+    .bloc2 p{
+        text-align: right;
+    }
+    .bloc4 p{
+        text-align: right;
+    }
+
+    .titre-section-bloc{
+        font-weight: bold;
+        text-decoration: underline;
+
+    }
+
+    .date{
+        font-weight: bold;
+    }
+
+    /* Section my PROJECTS */
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+ @import url('https://fonts.googleapis.com/css2? famille =Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+
+
+.Myingreen{
+    color: #6BDDE8;
+    margin-left: 10px;
+}
+
+
+.portfolio{
+
+    background-color: #3B3B3D;
+    height: 1050px;
+    width: calc(100% - 300px);
+    margin-left: auto
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.titre-port{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #EAEBF0;
+    font-size: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 6%;  */
+    margin-top: 0%;
+    padding-top: 2.5%;
+    position: relative;
+}
+.titre-port::before{
+    content: 'My projects';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0.1;
+    color: #E4E4E4;
+    position: absolute;
+    width: auto;
+    font-size: 90px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.cont-portfolio {
+    background-color: #3B3B3D;
+    display: grid;
+    grid-template-columns: 40px repeat(3, 1fr) 40px;
+    grid-column-gap: 40px;
+    grid-row-gap: 70px;
+
+    }
+
+
+
+
+h3  {
+    background-position-x: center;
+    background-position-y: center;
+    color: white;
+    margin-left: 30%;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 50;
+    color: white;
+
+}
+
+
+.div2 { grid-area: 2 / 2 / 3 / 3; }
+.div3 { grid-area: 2 / 3 / 3 / 4; }
+.div4 { grid-area: 2 / 4 / 3 / 5; }
+.div5 { grid-area: 3 / 2 / 4 / 3; }
+.div6 { grid-area: 3 / 3 / 4 / 4; }
+.div7 { grid-area: 3 / 4 / 4 / 5; }
+.div8 { grid-area: 4 / 2 / 5 / 3; }
+.div9 { grid-area: 4 / 3 / 5 / 4; }
+.div10 { grid-area: 4 / 4 / 5 / 5; }
+
+
+.div2 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .div2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .waw {
+    padding: 2px 16px;
+  }
+   button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: #6BDDE8;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border-style: outset;
+  border-color: #6BDDE8;
+   }
+
+  .div2 button:hover {
+    opacity: 0.7;
+  }
+
+
+
+  .div3 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .div3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .waw {
+    padding: 2px 16px;
+  }
+
+  .div3 button:hover {
+    opacity: 0.7;
+  }
+
+
+
+  .div4 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .div4:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .waw {
+    padding: 2px 16px;
+  }
+
+
+  .div4 button:hover {
+    opacity: 0.7;
+  }
+
+  .div5 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .div5:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .waw {
+    padding: 2px 16px;
+  }
+
+
+  .div5 button:hover {
+    opacity: 0.7;
+  }
+
+
+
+  .div6 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .div6:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .waw {
+    padding: 2px 16px;
+  }
+
+  .div6 button:hover {
+    opacity: 0.7;
+  }
+
+
+
+  .div7 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .div7:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .waw {
+    padding: 2px 16px;
+  }
+
+
+  .div7 button:hover {
+    opacity: 0.7;
+  }
+
+
+
+  .div8 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .div8:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .waw {
+    padding: 2px 16px;
+  }
+
+
+  .div8 button:hover {
+    opacity: 0.7;
+  }
+
+
+
+
+
+  .div9 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .div9:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .waw {
+    padding: 2px 16px;
+  }
+
+
+  .div9 button:hover {
+    opacity: 0.7;
+  }
+
+
+
+
+  .div10 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .div10:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .waw {
+    padding: 2px 16px;
+  }
+
+
+  .div10 button:hover {
+    opacity: 0.7;
+  }
